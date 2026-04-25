@@ -1,18 +1,3 @@
-<section>
-  <h2>About Me</h2>
-  <p>I am a passionate student focused on programming and data structures. I enjoy solving problems and building web applications.</p>
-</section>
-
-<section>
-  <h2>Skills</h2>
-  <ul>
-    <li>Programming (C / Java / Python)</li>
-    <li>Data Structures & Algorithms</li>
-    <li>Web Development (HTML, CSS, JavaScript)</li>
-    <li>Problem Solving</li>
-  </ul>
-</section>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -34,17 +19,41 @@
       background: #1e293b;
     }
 
+    header img {
+      border-radius: 50%;
+      width: 120px;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      text-align: center;
+      padding: 10px;
+      background: #334155;
+    }
+
+    nav a {
+      color: white;
+      margin: 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
     section {
       max-width: 900px;
       margin: 20px auto;
       padding: 20px;
       background: #1e293b;
       border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
     }
 
     h2 {
       border-bottom: 2px solid #38bdf8;
       padding-bottom: 5px;
+    }
+
+    ul {
+      line-height: 1.8;
     }
 
     a.button {
@@ -55,6 +64,16 @@
       color: black;
       border-radius: 5px;
       text-decoration: none;
+      transition: 0.3s;
+    }
+
+    a.button:hover {
+      background: #0ea5e9;
+      transform: scale(1.05);
+    }
+
+    html {
+      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -62,25 +81,67 @@
 <body>
 
 <header>
+  <img src="https://via.placeholder.com/120">
   <h1>CHIMMIRI GURU KARTHIKEYA CHOWDARI</h1>
   <p>Programming & Data Structures Enthusiast</p>
+  <a href="#" class="button">Download Resume</a>
 </header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+  <h2>About Me</h2>
+  <p>I am a passionate student focused on programming and data structures. I enjoy solving problems, learning algorithms, and building web applications.</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <ul>
+    <li>Programming (C / Java / Python)</li>
+    <li>Data Structures & Algorithms</li>
+    <li>Web Development (HTML, CSS, JavaScript)</li>
+    <li>Problem Solving</li>
+  </ul>
+</section>
 
 <section id="projects">
   <h2>Projects</h2>
 
-  <p><b>Calculator</b><br>
-  <a class="button" href="calculator.html">View Project</a></p>
+  <p>
+    <b>Calculator</b><br>
+    <small>Performs basic arithmetic operations</small><br>
+    <a class="button" href="calculator.html">View Project</a>
+  </p>
 
-  <p><b>To-Do List App</b><br>
-  <a class="button" href="todo.html">View Project</a></p>
+  <p>
+    <b>To-Do List App</b><br>
+    <small>Task manager using DOM manipulation</small><br>
+    <a class="button" href="todo.html">View Project</a>
+  </p>
 
-  <p><b>Number Guessing Game</b><br>
-  <a class="button" href="game.html">View Project</a></p>
+  <p>
+    <b>Number Guessing Game</b><br>
+    <small>Interactive logic-based game</small><br>
+    <a class="button" href="game.html">View Project</a>
+  </p>
 
-  <p><b>Sorting Visualizer</b><br>
-  <a class="button" href="sorting.html">View Project</a></p>
+  <p>
+    <b>Sorting Visualizer</b><br>
+    <small>Bubble Sort visualization</small><br>
+    <a class="button" href="sorting.html">View Project</a>
+  </p>
 
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Email: chimmiri.guru143@gmail.com</p>
+  <p><a href="https://github.com/guru-ch143" target="_blank">GitHub Profile</a></p>
 </section>
 
 </body>
